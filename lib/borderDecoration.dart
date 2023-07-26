@@ -34,7 +34,11 @@ class Mycointainer extends StatelessWidget {
               ),
             ],
           ),
-          child: Text('flutter'),
+          child: Text(
+            'flutter',
+            style:
+                TextStyle(fontSize: 40, color: Colors.black.withOpacity(0.7)),
+          ),
         ),
       ],
     );
