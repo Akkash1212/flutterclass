@@ -14,21 +14,73 @@ class Rightpyramid extends StatelessWidget {
                 Container(
                   height: 70,
                   width: 70,
-                  color: Colors.black,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(35),
+                  ),
                 )
               ],
+            ),
+            SizedBox(
+              height: 10,
             ),
             Row(
               children: [
                 Container(
                   height: 70,
                   width: 70,
-                  color: Colors.black,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(35),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
                 ),
                 Container(
                   height: 70,
                   width: 70,
-                  color: Colors.black,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(35),
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 70,
+                  width: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(35),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 70,
+                  width: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(35),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 70,
+                  width: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(35),
+                  ),
                 )
               ],
             )
