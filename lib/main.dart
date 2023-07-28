@@ -4,6 +4,7 @@ import 'borderDecoration.dart';
 import 'colum_row.dart';
 import 'liftpyramid.dart';
 import 'pyramid.dart';
+import 'user1.dart';
 import 'userpage.dart';
 
 void main() {
@@ -15,6 +16,6 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: User());
+    return MaterialApp(home: DisplyFlex());
   }
 }
