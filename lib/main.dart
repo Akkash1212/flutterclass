@@ -6,6 +6,7 @@ import 'liftpyramid.dart';
 import 'pyramid.dart';
 import 'user1.dart';
 import 'userpage.dart';
+import 'wrap.dart';
 
 void main() {
   runApp(Myapp());
@@ -16,6 +17,6 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: DisplyFlex());
+    return MaterialApp(home: Wraps());
   }
 }
