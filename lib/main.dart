@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'appbar.dart';
 import 'borderDecoration.dart';
 import 'colum_row.dart';
 import 'liftpyramid.dart';
@@ -17,6 +18,6 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Wraps());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Appbarex());
   }
 }
