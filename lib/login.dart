@@ -9,6 +9,7 @@ class Login extends StatelessWidget {
       child: Scaffold(
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
             Container(
               width: 600,
@@ -17,12 +18,58 @@ class Login extends StatelessWidget {
                   color: Colors.teal, borderRadius: BorderRadius.circular(50)),
               child: Column(
                 children: [
-                  Container(
-                    child: Text(
-                      "Hellow Again\nWelcome back you've \n been missed!",
+                  Text(
+                      "Hellow Again!",
                       style: TextStyle(fontSize: 20),
                     ),
-                  ),
+                  SizedBox(height: 10),
+                  Text("Welcome back you've been missed!"),
+                  SizedBox(height: 10),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                      width:200,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+
+                      ),
+                    child:Text("Username"),
+                  ),SizedBox(height: 10),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    width:200,
+                    height: 30,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child:Text("Password"),
+                  ),SizedBox(height: 10),
+                  Row(mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text("Recovery Password",style: TextStyle(fontSize: 10),textAlign: TextAlign.center,),
+                    ],
+                  ),SizedBox(height: 10),
+                  Row(mainAxisAlignment: MainAxisAlignment.center,
+
+                    children: [
+                      Container(
+                          height: 5,
+                          width: 50,
+                        decoration: BoxDecoration(color: Colors.black,gradient:LinearGradient(colors: [Colors.white54,Colors.black54]), ),
+
+                      ),
+                      Text("Or continue with"),
+                      Container(
+                        height: 5,
+                        width: 50,
+                        decoration: BoxDecoration(color: Colors.black,gradient:LinearGradient(colors: [Colors.white54,Colors.black54]),
+                      ),),
+
+                    ],
+                  )
+
                 ],
               ),
             ),
