@@ -8,13 +8,13 @@ class Login extends StatelessWidget {
   Expanded Border({bool right = true}) {
     return Expanded(
         child: Container(
-      height: 5,
-      decoration: BoxDecoration(
-          gradient: LinearGradient(
-              begin: right ? Alignment.centerRight : Alignment.centerLeft,
-              end: right ? Alignment.centerLeft : Alignment.centerRight,
-              colors: [Colors.black38, Colors.transparent])),
-    ));
+          height: 5,
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: right ? Alignment.centerRight : Alignment.centerLeft,
+                  end: right ? Alignment.centerLeft : Alignment.centerRight,
+                  colors: [Colors.black38, Colors.transparent])),
+        ));
   }
 
   @override
@@ -26,7 +26,7 @@ class Login extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
-            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
                 children: [
@@ -86,11 +86,11 @@ class Login extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  ImageContainer(links: ""),
+                  ImageContainer(links: "https://www.pngwing.com/en/free-png-znzwp"),
                   ImageContainer(),
                   ImageContainer()
                 ],
-              )
+              ),Container(child: Text("Not a member?Register now"),)
             ],
           ),
         ),
