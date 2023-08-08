@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class TextContainer extends StatelessWidget {
-  const TextContainer({super.key});
+  const TextContainer(
+      {super.key, this.hintText = "hint", this.isPassword = false});
+  final String hintText;
+  final bool isPassword;
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +17,9 @@ class TextContainer extends StatelessWidget {
       child: TextField(
         decoration: InputDecoration(
           border: InputBorder.none,
-          hintText: "hint",
+          hintText: hintText,
         ),
+        obscureText: isPassword,
       ),
     );
   }
