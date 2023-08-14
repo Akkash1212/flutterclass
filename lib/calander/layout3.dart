@@ -14,7 +14,7 @@ class Layout3 extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
+              const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -36,7 +36,7 @@ class Layout3 extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 width: 100,
               ),
               Column(
@@ -47,12 +47,12 @@ class Layout3 extends StatelessWidget {
                     alignment: Alignment.topRight,
                     height: 600,
                     width: 150,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(20),
                             topLeft: Radius.circular(20))),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Icon(Icons.message, color: Colors.white),
                         SizedBox(
