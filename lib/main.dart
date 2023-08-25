@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutterclass/uiDesign/design1.dart';
 
-import 'calander/layout2.dart';
-import 'calander/layout3.dart';
+import 'uiDesign/design2.dart';
+import 'uiDesign/design3.dart';
+import 'uiDesign/layout2.dart';
 
 void main() {
   runApp(Myapp());
@@ -14,7 +16,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Layout3(),
+      home: Design3(),
     );
   }
 }
