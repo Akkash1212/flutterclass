@@ -8,7 +8,7 @@ class Design3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.white.withOpacity(0.9),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -30,14 +30,14 @@ class Design3 extends StatelessWidget {
             Text(
               '   Hello,',
               style: TextStyle(
-                fontSize: 15,
-                color: Colors.black.withOpacity(0.8),
+                fontSize: 18,
+                color: Colors.black.withOpacity(0.6),
               ),
             ),
             Text(
               '   Mr.Anthony Burke,',
               style: TextStyle(
-                  fontSize: 17,
+                  fontSize: 19,
                   color: Colors.black,
                   fontWeight: FontWeight.bold),
             ),
@@ -45,7 +45,7 @@ class Design3 extends StatelessWidget {
               height: 20,
             ),
             Container(
-              color: Colors.green,
+              color: Colors.transparent,
               height: 200,
               width: double.infinity,
               child: SingleChildScrollView(
@@ -132,6 +132,8 @@ class Design3 extends StatelessWidget {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(15)),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -167,24 +169,23 @@ class Design3 extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 13, color: Colors.black),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Container(
-                                height: 5,
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  gradient: LinearGradient(
-                                      colors: [
-                                        Colors.green,
-                                        Colors.yellow,
-                                      ],
-                                      begin: Alignment.centerLeft,
-                                      end: Alignment.centerRight),
-                                ),
-                              ),
                             ],
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 10),
+                            height: 5,
+                            width: double.infinity,
+                            // width: 20,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              gradient: LinearGradient(
+                                  colors: [
+                                    Colors.green,
+                                    Colors.yellow,
+                                  ],
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.centerRight),
+                            ),
                           ),
                         ],
                       ),
@@ -262,9 +263,227 @@ class Design3 extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height: 18,
+            ),
             Text(
-              '     Co-owners',
-              style: TextStyle(fontSize: 15),
+              '   Co-owners',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.black.withOpacity(0.6),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Design3Container(
+                      height: 70,
+                      radius: 35,
+                      border: true,
+                    ),
+                    Design3Container(
+                      height: 70,
+                      radius: 35,
+                      border: true,
+                    ),
+                    Design3Container(
+                      height: 70,
+                      radius: 35,
+                      border: true,
+                    ),
+                    Design3Container(
+                      height: 70,
+                      radius: 35,
+                      border: true,
+                    ),
+                    Design3Container(
+                      height: 70,
+                      radius: 35,
+                      border: true,
+                    ),
+                    Design3Container(
+                      height: 70,
+                      radius: 35,
+                      border: true,
+                    ),
+                    Design3Container(
+                      height: 70,
+                      radius: 35,
+                      border: true,
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              '   Last files',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.black.withOpacity(0.6),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Column(
+              children: [
+                SingleChildScrollView(
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    height: 60,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.2),
+                        borderRadius: BorderRadius.circular(5)),
+                    child: Row(
+                      children: [
+                        Icon(Icons.file_copy_rounded),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text('Brandbook.PDF')
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.file_copy_rounded),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Brandbook.PDF')
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.file_copy_rounded),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Brandbook.PDF')
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.file_copy_rounded),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Brandbook.PDF')
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.file_copy_rounded),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Brandbook.PDF')
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.file_copy_rounded),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Brandbook.PDF')
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  height: 60,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.file_copy_rounded),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text('Brandbook.PDF')
+                    ],
+                  ),
+                ),
+              ],
             )
           ],
         ),
