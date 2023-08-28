@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../my_login_page/design3Container.dart';
+import 'design3Container.dart';
 
 class Design3 extends StatelessWidget {
   const Design3({super.key});
