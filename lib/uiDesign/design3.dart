@@ -45,9 +45,11 @@ class Design3 extends StatelessWidget {
               height: 20,
             ),
             Container(
-                color: Colors.green,
-                height: 200,
-                width: double.infinity,
+              color: Colors.green,
+              height: 200,
+              width: double.infinity,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -122,15 +124,148 @@ class Design3 extends StatelessWidget {
                     ),
                     Container(
                       height: 200,
-                      width: 90,
+                      width: 200,
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                      margin: EdgeInsets.symmetric(horizontal: 10),
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(10),
-                              bottomLeft: Radius.circular(10))),
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Design3Container(),
+                              Design3Container(),
+                              Design3Container(),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            'Google',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                                color: Colors.black),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                '5gb',
+                                style: TextStyle(
+                                    fontSize: 13, color: Colors.black),
+                              ),
+                              Text(
+                                '10gb',
+                                style: TextStyle(
+                                    fontSize: 13, color: Colors.black),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                height: 5,
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  gradient: LinearGradient(
+                                      colors: [
+                                        Colors.green,
+                                        Colors.yellow,
+                                      ],
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                      margin: EdgeInsets.symmetric(horizontal: 10),
+                      height: 200,
+                      width: 200,
+                      decoration: BoxDecoration(
+                          color: Colors.indigo[800],
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Design3Container(),
+                              Design3Container(),
+                              Design3Container(),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                'Dropbox',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    color: Colors.white70),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                '60gb',
+                                style: TextStyle(
+                                    fontSize: 13, color: Colors.white54),
+                              ),
+                              Text(
+                                '100gb',
+                                style: TextStyle(
+                                    fontSize: 13, color: Colors.white54),
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            height: 7,
+                          ),
+                          Container(
+                            height: 5,
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              gradient: LinearGradient(
+                                  colors: [Colors.yellow, Colors.white],
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.centerRight),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
-                )),
+                ),
+              ),
+            ),
+            Text(
+              '     Co-owners',
+              style: TextStyle(fontSize: 15),
+            )
           ],
         ),
       ),
