@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterclass/uiDesign/design1.dart';
 
+import 'border.dart';
+import 'stack.dart';
 import 'uiDesign/design2.dart';
 import 'uiDesign/design3.dart';
 import 'uiDesign/layout2.dart';
@@ -16,7 +17,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Design3(),
+      home: Borders(),
     );
   }
 }
