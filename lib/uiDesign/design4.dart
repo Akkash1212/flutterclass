@@ -22,7 +22,7 @@ class Design4 extends StatelessWidget {
             color: Colors.orangeAccent[400],
           ),
           SizedBox(
-            width: 15,
+            width: 20,
           )
         ],
       ),
@@ -43,14 +43,28 @@ class Design4 extends StatelessWidget {
                         color: Colors.white,
                       ),
                       hintText: "Search",
-                      hintStyle: TextStyle(color: Colors.white),
+                      hintStyle: TextStyle(color: Colors.white, fontSize: 20),
                       border: InputBorder.none),
                 )),
             SizedBox(
               height: 10,
             ),
             Row(
-              children: [TxtContainer4()],
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                TxtContainer4(
+                  cntcolor: Colors.orangeAccent,
+                  text: 'All',
+                ),
+                TxtContainer4(
+                  cntcolor: Colors.orangeAccent,
+                  text: 'News',
+                ),
+                TxtContainer4(
+                  cntcolor: Colors.orangeAccent,
+                  text: 'Category',
+                )
+              ],
             )
           ],
         ),
