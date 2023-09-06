@@ -53,19 +53,45 @@ class Design4 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TxtContainer4(
-                  cntcolor: Colors.orangeAccent,
+                  cntcolor: true,
                   text: 'All',
                 ),
                 TxtContainer4(
-                  cntcolor: Colors.orangeAccent,
+                  cntcolor: false,
                   text: 'News',
                 ),
                 TxtContainer4(
-                  cntcolor: Colors.orangeAccent,
+                  cntcolor: false,
                   text: 'Category',
                 )
               ],
-            )
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Expanded(
+              child: GridView.count(
+                padding: EdgeInsets.symmetric(horizontal: 10),
+                crossAxisCount: 2,
+                mainAxisSpacing: 20,
+                crossAxisSpacing: 20,
+                childAspectRatio: 1.7 / 2,
+                children: [
+                  ImgContainer(
+                    cntcolor: true,
+                  ),
+                  ImgContainer(
+                    cntcolor: false,
+                  ),
+                  ImgContainer(
+                    cntcolor: false,
+                  ),
+                  ImgContainer(
+                    cntcolor: false,
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
