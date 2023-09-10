@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterclass/iceCreaamPage/page2.dart';
 
 import 'border.dart';
+import 'iceCreaamPage/page2.dart';
 import 'stack.dart';
 import 'uiDesign/design2.dart';
 import 'uiDesign/design3.dart';
