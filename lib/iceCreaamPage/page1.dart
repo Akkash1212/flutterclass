@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'desin4TxtCont.dart';
+import 'page1TxtCont.dart';
 
-class Design4 extends StatelessWidget {
-  const Design4({super.key});
+class page1 extends StatelessWidget {
+  const page1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -53,15 +53,15 @@ class Design4 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TxtContainer4(
-                  cntcolor: true,
+                  isSelected: true,
                   text: 'All',
                 ),
                 TxtContainer4(
-                  cntcolor: false,
+                  isSelected: false,
                   text: 'News',
                 ),
                 TxtContainer4(
-                  cntcolor: false,
+                  isSelected: false,
                   text: 'Category',
                 )
               ],
@@ -78,16 +78,20 @@ class Design4 extends StatelessWidget {
                 childAspectRatio: 1.7 / 2,
                 children: [
                   ImgContainer(
-                    cntcolor: true,
+                    isSelected: true,
+                    imagepath: "assets/image/Popsicle1.png",
                   ),
                   ImgContainer(
-                    cntcolor: false,
+                    isSelected: false,
+                    imagepath: "assets/image/Popsicle2.png",
                   ),
                   ImgContainer(
-                    cntcolor: false,
+                    isSelected: false,
+                    imagepath: "assets/image/popsicle3.png",
                   ),
                   ImgContainer(
-                    cntcolor: false,
+                    isSelected: false,
+                    imagepath: "assets/image/popsicle4.png",
                   )
                 ],
               ),

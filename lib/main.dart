@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutterclass/iceCreaamPage/page2.dart';
 
 import 'border.dart';
 import 'stack.dart';
 import 'uiDesign/design2.dart';
 import 'uiDesign/design3.dart';
-import 'uiDesign/design4.dart';
+import 'iceCreaamPage/page1.dart';
 import 'uiDesign/layout2.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Design4(),
+      home: page2(),
     );
   }
 }
