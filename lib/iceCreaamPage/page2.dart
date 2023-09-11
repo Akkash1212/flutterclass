@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class page2 extends StatelessWidget {
-  const page2({super.key});
+class Page2 extends StatelessWidget {
+  const Page2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +85,8 @@ class page2 extends StatelessWidget {
                   ),
                   Text(
                     'Welcome to our Blue Moon Popsicle Stick ,Here we have no cost popcicle at very high quality  ',
-                    style: TextStyle(fontSize: 15, color: Colors.orange[500]),
+                    style: TextStyle(
+                        fontSize: 15, color: Colors.orange[500], height: 1.7),
                   ),
                   SizedBox(
                     height: 20,
