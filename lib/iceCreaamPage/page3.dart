@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'page3container.dart';
+// import 'page3container.dart';
 
 class Page3 extends StatelessWidget {
   Page3({super.key});
@@ -14,29 +14,37 @@ class Page3 extends StatelessWidget {
         margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
         child: Column(
           children: [
-            Icon(
-              Icons.arrow_back_outlined,
-              color: color,
-              size: 35,
+            Row(
+              children: [
+                Icon(
+                  Icons.arrow_back_outlined,
+                  color: color,
+                  size: 35,
+                ),
+              ],
             ),
             const SizedBox(
               height: 10,
             ),
-            const Text(
-              'My Cart',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30),
+            Row(
+              children: [
+                const Text(
+                  'My Cart',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30),
+                ),
+              ],
             ),
             const SizedBox(
               height: 10,
             ),
-            MainContainer(),
+            // MainContainer(),
             SizedBox(
               height: 10,
             ),
-            MainContainer()
+            // MainContainer()
           ],
         ),
       ),

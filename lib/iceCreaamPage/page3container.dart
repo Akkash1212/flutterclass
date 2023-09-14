@@ -23,7 +23,7 @@ class MainContainer extends StatelessWidget {
               flex: 5,
               child: Image.asset('assets/image/Popsicle1.png'),
             ),
-            const Expanded(
+            Expanded(
                 flex: 10,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -54,7 +54,7 @@ class MainContainer extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         ThisContainer(
-                          text: "1",
+                          text: "$quantity",
                         ),
                         SizedBox(
                           width: 10,
