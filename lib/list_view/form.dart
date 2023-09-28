@@ -134,6 +134,7 @@ class _FormtskState extends State<Formtsk> {
                 ],
               ),
               DropdownButton(
+                isExpanded: false,
                 icon: Icon(Icons.safety_check),
                 items: [
                   DropdownMenuItem(value: 'one', child: Text('One')),

@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutterclass/Provider/provider.dart';
+
+import 'package:provider/provider.dart';
+
+import 'Bottom_Navigation_Bar/mainpage.dart';
+import 'Provider/bottomnavProvider.dart';
+import 'Provider/mainPage.dart';
 import 'border.dart';
+import 'Bottom_Navigation_Bar/bottomNavigator.dart';
+import 'ecommous_app/shop.dart';
 import 'iceCreaamPage/page2.dart';
 import 'iceCreaamPage/page3.dart';
 import 'list_view/form.dart';
@@ -26,9 +35,15 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Formtsk(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => ExProvider()),
+        ChangeNotifierProvider(create: (context) => BottomNavProvider())
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: BtmNavi(),
+      ),
     );
   }
 }
