@@ -1,42 +1,54 @@
 import 'package:flutter/material.dart';
+import './users.dart';
 
-class User {
-  String name;
-  int age;
-  int mobleNumber;
-  User({required this.name, required this.age, required this.mobleNumber});
+class UserModel extends StatefulWidget {
+  UserModel({super.key});
 
-  List<Map<String, dynamic>> convertIntoMap() {
-    List<Map<String, dynamic>> people = [
-      {"name": "Alice", "age": 30},
-      {"name": "Bob", "age": 25},
-      {"name": "Charlie", "age": 35},
-      {"name": "David", "age": 28},
-    ];
-    return people;
-  }
+  @override
+  State<UserModel> createState() => _UserModelState();
 }
 
-class UserModel extends StatelessWidget {
-  UserModel({super.key});
+class _UserModelState extends State<UserModel> {
   User user = User(name: 'akash', age: 23, mobleNumber: 9585847049);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Text(user.name),
-            TextButton(
-                onPressed: () {
-                  print(user.name);
-                  print(user.age);
-                  print(user.mobleNumber);
-                  print(user.convertIntoMap());
-                },
-                child: Icon(Icons.add))
-          ],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                user.name,
+                style: TextStyle(fontSize: 30),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextButton(
+                  onPressed: () {
+                    // print(user.name);
+                    // print(user.age);
+                    // print(user.mobleNumber);
+                    // print(user.convertIntoMap());
+
+                    user =
+                        User(name: 'thamizh', age: 26, mobleNumber: 8776349232);
+                    setState(() {});
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black, width: 5),
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Text(
+                      'Changing value',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ))
+            ],
+          ),
         ),
       ),
     );

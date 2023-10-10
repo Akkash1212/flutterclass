@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutterclass/Provider/provider.dart';
 import 'package:flutterclass/factory_constructor/users.dart';
 
@@ -10,6 +9,7 @@ import 'Provider/bottomnavProvider.dart';
 import 'Provider/mainPage.dart';
 import 'border.dart';
 import 'Bottom_Navigation_Bar/bottomNavigator.dart';
+import 'counter.dart';
 import 'ecommous_app/shop.dart';
 import 'factory_constructor/Container.dart';
 import 'iceCreaamPage/page2.dart';
@@ -44,7 +44,7 @@ class Myapp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: UserModel(),
+        home: Counter(),
       ),
     );
   }
