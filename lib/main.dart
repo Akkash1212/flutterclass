@@ -23,6 +23,7 @@ import 'list_view/tsk3.dart';
 import 'buttons/tsk5.dart';
 import 'list_view/txt4Container.dart';
 import 'stack.dart';
+import 'text_controller/controller.dart';
 import 'uiDesign/design2.dart';
 import 'uiDesign/design3.dart';
 import 'iceCreaamPage/page1.dart';
@@ -44,7 +45,7 @@ class Myapp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Counter(),
+        home: Controller(),
       ),
     );
   }
