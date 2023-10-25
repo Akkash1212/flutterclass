@@ -59,6 +59,7 @@ class _ControllerState extends State<Controller> {
                         MaterialStateProperty.all(Colors.blueAccent),
                   ),
                   onPressed: () {
+
                     names.add(namecontroller.text);
                     namecontroller.clear();
                     setState(() {});
