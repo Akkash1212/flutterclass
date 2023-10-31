@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterclass/Provider/dataProvider.dart';
 import 'package:flutterclass/Provider/provider.dart';
 import 'package:flutterclass/factory_constructor/users.dart';
 import 'package:get_storage/get_storage.dart';
@@ -53,7 +54,8 @@ class Myapp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => ExProvider()),
-        ChangeNotifierProvider(create: (context) => BottomNavProvider())
+        ChangeNotifierProvider(create: (context) => BottomNavProvider()),
+        ChangeNotifierProvider(create: (context) => DataProvider())
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
